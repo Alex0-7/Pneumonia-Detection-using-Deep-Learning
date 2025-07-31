@@ -10,60 +10,78 @@ This project leverages deep learning techniques to automatically detect pneumoni
 
 ```bash
 git clone https://github.com/Alex0-7/Pneumonia-Detection-using-Deep-Learning.git
-2. Download the Dataset
+```
+
+### 2. Download the Dataset
+
 Download the chest X-ray dataset from Kaggle and extract it into your project directory:
 
-Dataset Link: Chest X-Ray Pneumonia Dataset
+**Dataset Link**: [Chest X-Ray Pneumonia Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data)
 
-📦 Installation
-Install the required dependencies using the requirements.txt file:
+---
 
-bash
-Copy
-Edit
+## 📦 Installation
+
+Install the required dependencies using the `requirements.txt` file:
+
+```bash
 pip install -r requirements.txt
-🚀 Running the Model
-Step 1: Update File Paths in Pneumonia.py
-Before running the training script, update the following lines in Pneumonia.py with your local dataset paths:
+```
 
-Line 10
+---
 
-Line 11
+## 🚀 Running the Model
 
-Line 16
+### Step 1: Update File Paths in `Pneumonia.py`
 
-Line 32
+Before running the training script, update the following lines in `Pneumonia.py` with your local dataset paths:
 
-Line 36
+* Line 10
+* Line 11
+* Line 16
+* Line 32
+* Line 36
 
 Then, run the script:
 
-bash
-Copy
-Edit
+```bash
 python Pneumonia.py
-Step 2: Test the Model Using test.py
+```
+
+---
+
+### Step 2: Test the Model Using `test.py`
+
 To evaluate the model on validation data:
 
-Open the test.py file.
+1. Open the `test.py` file.
+2. Update **line 11** with the correct path to the `PNEUMONIA` folder inside the `val` directory.
+3. Run the test script:
 
-Update line 11 with the correct path to the PNEUMONIA folder inside the val directory.
-
-Run the test script:
-
-bash
-Copy
-Edit
+```bash
 python test.py
-✅ Output
-The model will output predictions for the input X-ray images, indicating whether the image is Normal or shows signs of Pneumonia.
+```
 
-📌 Notes
-Ensure the dataset folder structure aligns with the script expectations.
+---
 
-Training time may vary based on your hardware (e.g., CPU vs GPU).
+## ✅ Output
 
-🤝 Acknowledgments
-Dataset provided by Paul Mooney on Kaggle
+The model will output predictions for the input X-ray images, indicating whether the image is **Normal** or shows signs of **Pneumonia**.
 
-Inspired by real-world applications in medical image analysis and diagnostics.
+---
+
+## 📌 Notes
+
+* Ensure the dataset folder structure aligns with the script expectations.
+* Training time may vary based on your hardware (e.g., CPU vs GPU).
+
+---
+
+## 🤝 Acknowledgments
+
+* Dataset provided by [Paul Mooney on Kaggle](https://www.kaggle.com/paultimothymooney)
+* Inspired by real-world applications in medical image analysis and diagnostics.
+
+---
+
+Feel free to contribute, suggest improvements, or report issues!
